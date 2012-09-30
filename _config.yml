@@ -1,0 +1,3 @@
+baseurl: /blog
+destination: ./blog
+pygments: true

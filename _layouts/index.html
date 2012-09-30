@@ -1,0 +1,13 @@
+{% include html_header.html %}
+{% include header.html %}
+	{% assign extraClass = '' %}
+	{% for post in site.posts %}
+		{% include entry.html %}
+		{% if extraClass == '' %}
+			{% assign extraClass = 'dark' %}
+		{% else %}
+			{% assign extraClass = '' %}
+		{% endif %}
+	{% endfor %}
+{% include footer.html %}
+{% include html_footer.html %}

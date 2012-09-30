@@ -1,0 +1,19 @@
+<div class="entry {{extraClass}}">
+	<div class="entryContent">
+		<h2>{{ post.title }}</h2>
+		{% if post.truncate %}
+			{% assign count = post.content | number_of_words %}
+			{% assign trunc = post.truncate_words %}
+			{% assign cont = post.content %}
+			{% if count > trunc %}
+				{{ cont | truncatewords: trunc }}
+				<p><a href="{{site.baseurl}}{{post.url|escape|replace:'+','%20'}}">Continue Reading...</a></p>
+			{% else %}
+				{{post.content}}
+			{% endif %}
+		{% else %}
+			{{ post.content }}
+		{% endif %}
+		<div class="super-tiny">{{ post.date | date:'%x' }}</div>
+	</div>
+</div>

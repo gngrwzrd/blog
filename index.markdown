@@ -1,4 +1,4 @@
 ---
 layout: index
-title: Aaron Smith - The Ginger Wizard
+title: Aaron Smith - The Ginger Wizard!
 ---

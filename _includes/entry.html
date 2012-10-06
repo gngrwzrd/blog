@@ -14,6 +14,9 @@
 		{% else %}
 			{{ post.content }}
 		{% endif %}
-		<div class="super-tiny">{{ post.date | date:'%x' }}</div>
+		<div class="super-tiny">
+			{{ post.date | date:'%x' }}
+			<a href="{{site.baseurl}}{{post.url|replace:'+',' '}}" title="permalink">PERMALINK</a>
+		</div>
 	</div>
 </div>

@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Aaron Smith - The Ginger Wizard!</title>
+	<title>Android GCM, Retry Receiver Class Not Set Yet</title>
 	<link rel="stylesheet" href="/blog/css/syntax.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="/blog/css/main.css" type="text/css" media="screen" />
 	<meta name="viewport" content="width=device-width" />
@@ -32,29 +32,10 @@
 			</div>
 		</div>
 	</div>
-	
-	
-		<div class="entry ">
-	<div class="entryContent">
-		<h2>Tile Mess</h2>
-		
-			<p>Just finished Tile Mess, another 4x4 tile puzzle game. I figured this time I might as well make it my own instead of for an employer, as well as putting it in the App Store for myself. It&#8217;s inspired from another tile puzzle game I created called &#8220;Scrambled,&#8221; but for this I had to write it from scratch because I technically didn&#8217;t own the other one I built.</p>
-		
-		<div class="super-tiny">
-			10/14/12
-			<a href="/blog/2012/10/14/Tile Mess.html" title="permalink">PERMALINK</a>
-		</div>
-	</div>
-</div>
-		
-			
-		
-	
-		<div class="entry dark">
+<div class="entry">
 	<div class="entryContent">
 		<h2>Android GCM, Retry Receiver Class Not Set Yet</h2>
-		
-			<p>I&#8217;m working on a project that needed Android push notifications and decided to use <a href='http://developer.android.com/guide/google/gcm/gs.html' title='GCM'>GCM</a> - it&#8217;s very easy to setup. I did however run into an issue that Google has fixed in their source repository, but hasn&#8217;t been distributed to end users yet.</p>
+		<p>I&#8217;m working on a project that needed Android push notifications and decided to use <a href='http://developer.android.com/guide/google/gcm/gs.html' title='GCM'>GCM</a> - it&#8217;s very easy to setup. I did however run into an issue that Google has fixed in their source repository, but hasn&#8217;t been distributed to end users yet.</p>
 
 <p>If you get the error &#8220;internal error: retry receiver class not set yet,&#8221; then you&#8217;ve got an older version of the client gcm.jar. <a href='https://code.google.com/p/gcm/source/diff?spec=svne1a099b36566c265f758facf70b8f4f3684ed0ea&amp;r=e1a099b36566c265f758facf70b8f4f3684ed0ea&amp;format=side&amp;path=/gcm-client/src/com/google/android/gcm/GCMBroadcastReceiver.java' title='Patched GCMBroadcastReceiver'>This</a> is the patch that fixes the error.</p>
 
@@ -63,33 +44,26 @@
 <p>Edit: Turns out this will be in the next <a href='https://code.google.com/p/gcm/wiki/ReleaseNotes' title='GCM Release Notes'>release</a> of GCM.</p>
 
 <p>Voila!</p>
-		
 		<div class="super-tiny">
 			09/30/12
-			<a href="/blog/2012/09/30/Android GCM Error.html" title="permalink">PERMALINK</a>
 		</div>
+		<br/>
+		<div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'gngrwzrdblog'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</div>
 </div>
-		
-			
-		
-	
-		<div class="entry ">
-	<div class="entryContent">
-		<h2>New Blog</h2>
-		
-			<p>Decided to put up this blog on my own domain and get off of tumblr. I didn&#8217;t write much on tumblr - and probably won&#8217;t write much here. I like the idea of using <a href='http://jekyllrb.com' title='Jekyll'>Jekyll</a> to generate a static blog over using tumblr.</p>
-		
-		<div class="super-tiny">
-			09/28/12
-			<a href="/blog/2012/09/28/New Blog.html" title="permalink">PERMALINK</a>
-		</div>
-	</div>
-</div>
-		
-			
-		
-	
 </div> <!-- #container -->
 </body>
 </html>
